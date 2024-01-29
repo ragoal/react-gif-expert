@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const GifItem = ({title, url}) => {
     // return ( <img className="card" key={image.id} src={image.url} alt={image.title}/> );
     return ( 
@@ -7,4 +9,9 @@ export const GifItem = ({title, url}) => {
         </div>
     );
 }
- 
+
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+};
+
